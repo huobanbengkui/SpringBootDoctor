@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "girl",
+      "type": "com.huobanbengkui.properties.GirlProperties",
+      "sourceType": "com.huobanbengkui.properties.GirlProperties"
+    },
+    {
+      "name": "person",
+      "type": "com.huobanbengkui.controller.Person",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "girl.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.huobanbengkui.properties.GirlProperties"
+    },
+    {
+      "name": "girl.cup-size",
+      "type": "java.lang.String",
+      "sourceType": "com.huobanbengkui.properties.GirlProperties"
+    },
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    },
+    {
+      "name": "person.boss",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    },
+    {
+      "name": "person.brith",
+      "type": "java.util.Date",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    },
+    {
+      "name": "person.dog",
+      "type": "com.huobanbengkui.controller.Dog",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    },
+    {
+      "name": "person.last-name",
+      "type": "java.lang.String",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    },
+    {
+      "name": "person.lists",
+      "type": "java.util.List<java.lang.Object>",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    },
+    {
+      "name": "person.map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "com.huobanbengkui.controller.Person"
+    }
+  ],
+  "hints": []
+}

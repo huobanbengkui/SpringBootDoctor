@@ -1,0 +1,54 @@
+#
+#server:
+#  port: 8081
+#spring:
+#  profiles:
+#    active: dev
+#---
+#server:
+#  port: 8082
+#spring:
+#  profiles: dev
+
+
+person:
+  lastName: 张三${random.uuid}
+  age: ${random.int}
+  boss: false
+  birth: 2018-01-02
+  map: {k1: k2, k3: k4}
+  lists: [1, 2, 3, 4]
+  dog:
+    name: ${person.lastName:默认值}dog
+    age: 2
+
+girl:
+  cupSize: B
+  age: 18
+
+spring:
+  application:
+    name: ZUUL-PROXY
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ocss_agent?characterEncoding=utf8&autoReconnect=true
+    username: root
+    password: 123456                  #gwk910928zll
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.huobanbengkui.MyBatis
+
+
+# 调整日志输出级别
+# file 当前项目下生成log日志
+# path 指定路径记录Log日志
+#logging:
+#  level: trace
+#  file: aaa
+#  path: bbb
